@@ -18,16 +18,16 @@ const image1 =
   "https://images.unsplash.com/photo-1549880338-65ddcdfd017b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80";
 
   const ListLink = props => (
-    <li style={{ display: `inline-block`, marginRight: `1rem` }}>
+    <li style={{ display: `inline`, justifyContent:`center`, alignItems:`center`, marginRight: `2rem`, margin:`40px`}}>
       <Link to={props.to}>{props.children}</Link>
     </li>
   )
 
 export default ({children}) => (
   <div style={styles}>
-    <Parallax bgImage={image1} strength={500} style={{minWidth:1300}}>
-    <div style={{ margin: `auto`, width:`100%`, padding: `0 10rem`, background:`white`, position:`fixed`}}>
-      <header style={{ marginBottom: `0.5rem` }}>
+    <Parallax bgImage={image1} strength={500} style={{minWidth:1200}}>
+    <div style={{ margin: `auto`, width:`100%`, padding: `0 10rem`, background:`white`, position:`fixed`, boxShadow: `0px 1px 10px black`}}>
+      <header style={{ marginBottom: `0.5rem`}}>
         <Link to="/" style={{ textShadow: `none`, backgroundImage: `none` }}>
           <h3 style={{ display: `inline`}}>MyTestSite</h3>
         </Link>
@@ -43,4 +43,4 @@ export default ({children}) => (
     </Parallax>
     {children}
     </div>
-)
+  )
