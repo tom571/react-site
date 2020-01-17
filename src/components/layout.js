@@ -2,6 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import { Parallax, Background } from "react-parallax";
 import Container from "../components/container"
+import Navigation from "../components/navigation"
 
 const styles = {
   textAlign: "center"
@@ -25,22 +26,12 @@ const image1 =
 
 export default ({children}) => (
   <div style={styles}>
+  <Navigation />
     <Parallax bgImage={image1} strength={500} style={{minWidth:1200}}>
-    <div style={{ margin: `auto`, width:`100%`, padding: `0 10rem`, background:`white`, position:`fixed`, boxShadow: `0px 1px 10px black`}}>
-      <header style={{ marginBottom: `0.5rem`}}>
-        <Link to="/" style={{ textShadow: `none`, backgroundImage: `none` }}>
-          <h3 style={{ display: `inline`}}>MyTestSite</h3>
-        </Link>
-        <ul style={{ listStyle: `none`, float: `right`}}>
-          <ListLink to="/">Home</ListLink>
-          <ListLink to="/about/">About</ListLink>
-          <ListLink to="/contact/">Contact</ListLink>
-        </ul>
-      </header>
-    </div>
       <div style={{ height: 500 }}>
       </div>
     </Parallax>
     {children}
+
     </div>
   )
