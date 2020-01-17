@@ -1,5 +1,5 @@
 import React from 'react';
-import CssBaseline from '@material-ui/core/CssBaseline';
+//import CssBaseline from '@material-ui/core/CssBaseline'; usage = <CssBaseline />   -pretty sure this styles the whole document
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
