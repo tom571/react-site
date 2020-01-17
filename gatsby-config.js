@@ -13,5 +13,4 @@
        },
      },
    ],
-   `gatsby-plugin-material-ui`
  }
